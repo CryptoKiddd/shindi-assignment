@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9Ix8iclSKqKAwpiJvFRa3BUerCz8YUTo&loading=async&callback=initMap">
+  defer
+  </script>
     <title>Tourinvest</title>
   </head>
   <body>
@@ -62,7 +67,7 @@
                 <img src="images/boulevard.jpeg" alt="">
                 <div class="project-text">
                     <span class="project-name">პროექტის სახელი</span>
-                    <a href="#" class="project-link">იხილეთ პროექტი</a>
+                    <a href="/pages/boulevard.html" class="project-link">იხილეთ პროექტი</a>
                 </div>
             </div>
             <div class="project">
@@ -294,7 +299,7 @@
           </div>
          </form>
          <div class="contacts-location-indicator">
-          <img src="images/logonotext.png" alt="">
+          <!-- <img src="images/logonotext.png" alt=""> -->
          </div>
    
       </div>
@@ -309,10 +314,12 @@
        </div>
       
         
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.3825682666497!2d41.64274737593215!3d41.647475571267975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4067863c4312155b%3A0xf6aa824cd859b875!2sArgo%20Cable%20Car!5e0!3m2!1sen!2sge!4v1711205698022!5m2!1sen!2sge" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     
+       <div id="map" ></div>
        
     </div>
     </div>
+    
+  
   </body>
+<script src="index.js"></script>
 </html>
