@@ -65,6 +65,53 @@ img {
 
 
 
+/* ///////////////////////////////navigation remainder, right on bottom from navigation ///////////////*/
+.nav-remainder {
+  position: relative;
+  width: 100%;
+  height: 221px;
+}
+.nav-remainder img {
+  height: 100%;
+}
+.nav-remainder div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+}
+.nav-remainder h3 {color: white;
+  font-family: "Roboto _GEO Mt";
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 14px;
+  z-index: 100;
+}
+.nav-remainder span{
+    font-family: "Roboto _Nusx";
+font-size: 14px;
+font-weight: normal;
+line-height: 20px;
+color: grey;
+}
+.nav-remainder::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #224862;
+  opacity: 0.7;
+}
+
+
+/* /////////////////////end of navigation remainder///////////////////// */
+
+
+
 @media only screen and (max-width: 1600px) {
 .nav-container{
   padding: 30px 150px;

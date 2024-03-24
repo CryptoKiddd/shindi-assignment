@@ -1,5 +1,6 @@
 .nav-boulevard{
     /* filter: drop-shadow(0px 3px 7.5px rgba(0,0,0,0.1 )); */
+    box-shadow:0px 3px 7.5px rgba(0,0,0,0.1 ) ;
 }
 .boulevard-wrapper{
     width: 100%;
@@ -8,7 +9,7 @@
     gap:136px;
     align-items: center;
     margin: auto;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 160px);
 }
 .bouelvard-left{
     height: 100%;
@@ -18,12 +19,56 @@
     justify-content: center;
     align-items: start;
     padding: 20px 50px;
+    font-family: "Roboto _Nusx";
+font-size: 14px;
+font-weight: normal;
+line-height: 20px;
+font-style: normal;
+text-align: left;
+color: #7a7a7a;
 }
-.bouelvard-left{
+.boulevard-right{
     flex: 1;
    height: 100%;
 }
 .link-list img{
     width: 5px;
     
+}
+.boulevard-desc{
+    font-family: "Roboto _Nusx";
+    font-size: 14px;
+font-weight: normal;
+line-height: 20px;
+font-style: normal;
+text-align: left;
+color: #7a7a7a;
+}
+.boulevard-desc h2{
+    font-family: "Roboto _GEO Mt";
+font-size: 30px;
+font-weight: bold;
+font-style: normal;
+text-align: left;
+color: #224862;
+margin-bottom: 18px;
+margin-top: 75px;
+}
+.link-list-top{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 18px;
+}
+.link-list-top img{
+    rotate: 180deg;
+}
+.link-list-bottom{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.active-boulevard{
+    color:#224862;
+    font-weight: 600;
 }
