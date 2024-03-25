@@ -31,7 +31,7 @@ img {
   display: flex;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 10000;
   justify-content: space-between;
   align-items: center;
   padding: 30px 280px;

@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="../css/contacts.css">
+    <script 
+    async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9Ix8iclSKqKAwpiJvFRa3BUerCz8YUTo&loading=async&callback=initMap2">
+  defer
+  </script>
     <title>კონტაქტები</title>
 </head>
 <body>
@@ -18,16 +23,16 @@
               <a href="../index.html"> მთავარი </a>
             </li>
             <li class="nav-link">
-              <a href="#">ჩვენს შესახებ</a>
+              <a href="../pages/about.html">ჩვენს შესახებ</a>
             </li>
             <li class="nav-link">
               <a href="../pages/tourinvest.html">ტურინვეს ჯგუფი</a>
             </li>
             <li class="nav-link">
-              <a href="#"> სიახლეები </a>
+              <a href="../pages/news.html"> სიახლეები </a>
             </li>
             <li class="nav-link">
-              <a href="../pages/contacts"> კონტაქტი </a>
+              <a href="#"> კონტაქტი </a>
             </li>
           </ul>
         </nav>
@@ -43,40 +48,48 @@
       <div class="nav-remainder">
         <img src="../images/hilton-cover.jpeg" alt="" />
         <div>
-          <h3>სიახლეები</h3>
-          <span>სიახლეები</span>
+          <h3>კონტაქტები3 </h3>
+          <span>კონტაქტები3</span>
         </div>
       </div>
       <div class="contacts-container">
-        <div class="contact-info">
-            <div class="">
-              <img src="images/icons/location.png" alt="">
-              <p>ბათუმი,  გიორგი ბრწყინვალეს N42</p>
-            </div>
-            <div class="">
-              <img src="images/icons/phone.png" alt="">
-              <p>+995 555 12 23 34</p>
-            </div>
-            <div class="">
-              <img src="images/icons/email.png" alt="">
-              <p>tourinvest@gmail.com</p>
-            </div>
-            <div class="social-media-icons">
-              <img src="images/icons/fb.png" alt="">
-              <img src="images/icons/insta.png" alt="">
-              <img src="images/icons/ggl.png" alt="">
-            </div>
-          </div>
-        <form action="">
-         <input type="text" placeholder="სახელი">
-         <input type="text" placeholder="ტელეფონი">
-         <input type="email" placeholder="ელფოსტა">
-         <button>გაგზავნა</button>
-        
-        </form>
+        <div class="contacts-left">
+
+            <div class="contact-info">
+                <div class="">
+                  <img src="../images/icons/location.png" alt="">
+                  <p>ბათუმი,  გიორგი ბრწყინვალეს N42</p>
+                </div>
+                <div class="">
+                  <img src="../images/icons/phone.png" alt="">
+                  <p>+995 555 12 23 34</p>
+                </div>
+                <div class="">
+                  <img src="../images/icons/email.png" alt="">
+                  <p>tourinvest@gmail.com</p>
+                </div>
+                <div class="social-media-icons">
+                  <img src="../images/icons/fb.png" alt="">
+                  <img src="../images/icons/insta.png" alt="">
+                  <img src="../images/icons/ggl.png" alt="">
+                </div>
+              </div>
+            <form action="">
+             <input type="text" placeholder="სახელი">
+             <input type="text" placeholder="ტელეფონი">
+             <input type="email" placeholder="ელფოსტა">
+             <button>გაგზავნა</button>
+            
+            </form>
+        </div>
+        <div class="contacts-right">
+
+            <div id="map2"></div>
+        </div>
      
   
      </div>
+     <script src="../js/contacts.js"></script>
     
 </body>
 </html>

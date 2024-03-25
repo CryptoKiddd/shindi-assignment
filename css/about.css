@@ -1,0 +1,41 @@
+.slider{
+  height: calc(100vh - 360px );
+   position: relative;
+ 
+   overflow: hidden;
+}
+
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    background: red;
+    padding: 20px;
+    transition: 0.5s ease;
+    display: flex;justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+}
+#next, #prev{
+    position: absolute;
+    top: 40%;
+    color:white;
+    background: transparent;
+    border-radius: 50px;
+   padding: 20px;
+    border: 1px solid black;
+    font-size: 16px;
+    left: 50px;
+    color: black;
+}
+#next{
+    left: unset;
+    right: 50px;
+}
+.slider-container{
+    position: relative;
+    width: 100%
+}
