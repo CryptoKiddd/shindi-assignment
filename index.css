@@ -6,7 +6,7 @@
 }
 body {
   scroll-behavior: smooth;
-
+  height: 100%;
   scroll-snap-type: y mandatory;
 }
 ::-webkit-scrollbar {
@@ -70,6 +70,9 @@ img {
 .lang-list {
   display: flex;
   gap: 28px;
+}
+.lang{
+  color: rgb(239, 238, 238);
 }
 
 
