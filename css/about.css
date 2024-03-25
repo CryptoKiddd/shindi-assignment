@@ -10,14 +10,20 @@
     width: 100%;
     height: 100%;
     text-align: justify;
-    background: red;
-    padding: 20px;
+background: white;
+    padding: 150px 250px;
     transition: 0.5s ease;
     display: flex;justify-content: center;
     align-items: center;
     flex-direction: column;
     top: 0;
     left: 0;
+    font-family: "Roboto _Nusx";
+font-size: 14px;
+font-weight: normal;
+line-height: 20px;
+text-align: left;
+color: #7a7a7a;
 }
 #next, #prev{
     position: absolute;
@@ -25,17 +31,49 @@
     color:white;
     background: transparent;
     border-radius: 50px;
-   padding: 20px;
+   padding: 20px 25px;
     border: 1px solid black;
     font-size: 16px;
     left: 50px;
     color: black;
+    cursor: pointer;
+    transition: 250ms ease;
 }
 #next{
     left: unset;
     right: 50px;
 }
+#prev:hover{
+    background-color: #224862;
+    color: white;
+}
+#next:hover{
+    background-color: #224862;
+    color: white;
+}
+#next:hover{
+    background-color: #224862;
+}
 .slider-container{
     position: relative;
     width: 100%
+}
+.slider-actions{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: -25px;
+}
+.slider-actions button{
+    background: white;
+    border-bottom:1ps solid #707070;
+    outline: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    z-index: 1000;
+    color: #224862;
+    cursor: pointer;
 }

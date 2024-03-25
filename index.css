@@ -52,12 +52,21 @@ img {
   justify-content: center;
   align-items: center;
   gap: 80px;
+  border-bottom: 5px solid rgb(201, 199, 199);
 }
 .nav-link a {
   width: 100%;
   display: block;
   color: #707070;
+ 
 }
+.nav-link{
+  /* background: red; */
+  padding: 7px 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+
 .lang-list {
   display: flex;
   gap: 28px;
@@ -116,6 +125,8 @@ color: grey;
 .nav-container{
   padding: 30px 150px;
 }
+
+
 .nav-links-container {
 
   gap: 60px;
