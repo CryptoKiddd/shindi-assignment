@@ -2,6 +2,7 @@
   .hero-wrapper {
     display: flex;
     flex-direction: column;
+    scroll-snap-align: center;
   }
   
 
@@ -61,6 +62,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    scroll-snap-align: center;
     /* padding:50px 280px 30px 280px; */
   }
   .about-us-container {
@@ -134,6 +136,7 @@
     padding: 170px 280px 0 280px;
     position: relative;
     margin: auto;
+    scroll-snap-align: center;
   }
   .news-container {
     display: flex;
@@ -281,6 +284,15 @@
     width: 200px;
     height: 200px;
   }
+  .hero-wrapper,
+.about-us-wrapper,
+.news-wrapper,
+.contacts-wrapper
+{
+  scroll-snap-align: center;
+  scroll-margin-block-start: 310px;
+}
+
   
 
   @media only screen and (max-width: 1700px) {
