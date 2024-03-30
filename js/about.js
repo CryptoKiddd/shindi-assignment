@@ -4,6 +4,8 @@ let prev = document.getElementById('prev')
 let about = document.getElementById('slide-about')
 let goals = document.getElementById('slide-goals')
 let ambitions = document.getElementById('slide-ambitions')
+const header = document.getElementById("header")
+const subheader = document.getElementById("subheader")
 
 
 let active = 0;
@@ -35,6 +37,8 @@ about.onclick=function(){
     goals.style.color='#224862'
     ambitions.style.color='#224862'
 
+    header.textContent = 'ჩვენს შესახებ'
+    subheader.textContent = 'ჩვენს შესახებ'
     slideshow()
 
 
@@ -49,6 +53,8 @@ ambitions.onclick=function(){
 
     goals.style.color='#224862'
     about.style.color='#224862'
+    header.textContent = 'კომპანიის ხედვები და ამოცანები'
+    subheader.textContent = 'კომპანიის ხედვები და ამოცანები'
 
     slideshow()
 
@@ -63,6 +69,8 @@ goals.onclick=function(){
 
     about.style.color='#224862'
     ambitions.style.color='#224862'
+    header.textContent = 'სამომავლო მიზნები'
+    subheader.textContent = 'სამომავლო მიზნები'
 
 
     slideshow()
