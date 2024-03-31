@@ -1,4 +1,18 @@
+.hero-image{
+  display: flex;
+  width: 100vw;
+  margin-top: 400px;
+  height: 100vh ;
+  scroll-snap-align: center;
 
+  /* margin-top: 170px; */
+}
+.hero-image img{
+  /* margin-top: 160px; */
+  width: 100%;
+  /* object-fit: c; */
+  height: 100%;
+}
   .hero-wrapper {
     display: flex;
     flex-direction: column;
@@ -14,14 +28,18 @@
  
   .projects-container {
     width: 100%;
+    height: calc(100vh - 170px);
+    /* height: 100vh; */
     position: relative;
+    overflow: hidden;
+    margin-top: 170px;
   }
   .project {
     position: relative;
     /* max-width: 420px; */
     max-height: 920px;
     width: 100%;
-    transition: 250ms ease-in;
+    transition: 1250ms ease-in;
   }
   .project > img {
     filter: brightness(50%);
@@ -54,16 +72,27 @@
   .project:hover .project-text {
     transform: translateY(-64px);
   }
+  /* .project:nth-child(even){
+    transform: translateY(-100%);
+  }
+  .project:nth-child(odd){
+    transform: translateY(100%);
+  }
+  .show-projects{
+    transform: translateY(0);
+  } */
+
+
   .about-us-wrapper {
     scroll-snap-align: start;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh -170vh);
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
     position: relative;
     scroll-snap-align: center;
-    /* padding:50px 280px 30px 280px; */
+    margin-top: 70px;
   }
   .about-us-container {
     display: flex;
@@ -73,6 +102,8 @@
     max-width: 1080px;
     width: 100%;
     margin-left: 150px;
+    margin-top: 110px;
+   
   }
   .about-company {
     margin-bottom: 40px;
@@ -132,11 +163,12 @@
   .news-wrapper {
     scroll-snap-align: start;
     width: 100%;
-    min-height: 100vh;
-    padding: 170px 280px 0 280px;
+    min-height: calc(100vh + 170px) ;
+    padding: 0px 280px 0 280px;
     position: relative;
     margin: auto;
     scroll-snap-align: center;
+    display: flex;align-items: center;justify-content: center;
   }
   .news-container {
     display: flex;
@@ -211,7 +243,7 @@
   }
   .contacts-wrapper{
       width: 100%;
-      height: 100vh;
+      height:100vh ;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -290,7 +322,16 @@
 .contacts-wrapper
 {
   scroll-snap-align: center;
-  scroll-margin-block-start: 310px;
+  /* scroll-margin-block-start: 310px; */
+}
+
+.about-us-wrapper{
+  scroll-margin-block-start: 0px;
+  
+}
+.news-wrapper{
+    scroll-margin-block-start: 370px;
+
 }
 
   

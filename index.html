@@ -11,29 +11,22 @@
   </script>
     <title>Tourinvest</title>
   </head>
-  <body>
+  <body >
     <div class="nav-container">
         <div class="logo">
-          <img src="images/logo.png" alt="" srcset="" />
+          <a href="#">
+            <img src="images/logo.png" alt="" srcset="" />
+
+          </a>
         </div>
         <nav>
-          <ul class="nav-links-container">
-            <li class="nav-link">
-              <a href="#"> მთავარი </a>
-            </li>
-            <li class="nav-link">
-              <a href="pages/about.html">ჩვენს შესახებ</a>
-            </li>
-            <li class="nav-link">
-              <a href="pages/tourinvest.html">ტურინვეს ჯგუფი</a>
-            </li>
-            <li class="nav-link">
-              <a href="pages/news.html"> სიახლეები </a>
-            </li>
-            <li class="nav-link">
-              <a href="pages/contacts.html"> კონტაქტი </a>
-            </li>
-          </ul>
+          <a  class="nav-link" href="#"> მთავარი </a>
+          <a  class="nav-link" href="pages/about.html">ჩვენს შესახებ </a>
+          <a  class="nav-link" href="pages/tourinvest.html" > ტურინვესტ ჯგუფი </a>
+          <a  class="nav-link" href="pages/news.html"> სიახლეები </a>
+          <a  class="nav-link" href="pages/contacts.html"> კონტაქტი </a>
+         
+          <div class="nav-underline"></div>
         </nav>
         <div class="lang-container">
             <ul class="lang-list">
@@ -47,8 +40,11 @@
         </div>
 
     </div>
-    <div class="hero-wrapper">
-        <div class="projects-container">
+    <div class="hero-image">
+      <img src="/images/boulevard-main.png" alt="">
+    </div>
+    <div class="hero-wrapper" id="hero">
+        <div class="projects-container" id="projects">
             <div class="project">
                 <img src="images/hilton.jpeg" alt="">
                 <div class="project-text">
@@ -80,7 +76,7 @@
         </div>
 
     </div>
-    <div class="about-us-wrapper">
+    <div class="about-us-wrapper" id="about">
        <div class="about-us-container">
         <div class="about-company">
             <h4>ჩვენ შესახებ</h4>
@@ -112,14 +108,14 @@
        <div class="sidenav">
         <span>ჩვენს შესახებ</span>
         <div class="sidenav-indicators">
-          <p class="s1">- 1</p>
-          <p>- 2</p>
-          <p>- 3</p>
+          <a class="s1" >- 1</a>
+          <a href="#news">- 2</a>
+          <a  href="#contacts">- 3</a>
           <img src="images/scroll.png">
         </div>
        </div>
     </div>
-    <div class="news-wrapper">
+    <div class="news-wrapper" id="news">
       <div class="news-container">
     
 
@@ -264,14 +260,14 @@
       <div class="sidenav">
         <span>სიახლეები</span>
         <div class="sidenav-indicators">
-          <p>- 1</p>
-          <p class="s1">- 2</p>
-          <p>- 3</p>
+          <a  href="#about" >- 1</a>
+          <a class="s1">- 2</a>
+          <a href="#contacts">- 3</a>
           <img src="images/scroll.png">
         </div>
        </div>
       </div>
-    <div class="contacts-wrapper">
+    <div class="contacts-wrapper" id="contacts">
       <div class="contacts-container">
          <form action="">
           <input type="text" placeholder="სახელი">
@@ -306,9 +302,9 @@
       <div class="sidenav">
         <span>კონტაქტი </span>
         <div class="sidenav-indicators">
-          <p>- 1</p>
-          <p >- 2</p>
-          <p class="s1">- 3</p>
+          <a href="#about" >- 1</a>
+          <a href="#news" >- 2</a>
+          <a class="s1">- 3</a>
           <img src="images/scroll.png">
         </div>
        </div>
@@ -321,5 +317,6 @@
     
   
   </body>
-<script src="index.js"></script>
+<script defer src="index.js"></script>
+<script defer src="js/active.js"></script>
 </html>
