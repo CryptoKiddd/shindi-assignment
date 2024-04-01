@@ -28,6 +28,10 @@ if(windowPathname === "/pages/tourinvest.html"){
 
 }
 
+window.onload = ()=> {
+    geo.classList.add('lang-item')
+   
+}
 
 rus.addEventListener('click', function(){
    rus.classList.add('lang-item')
