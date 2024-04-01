@@ -23,6 +23,7 @@
   .projects-container,
   .lang-list {
     display: flex;
+    font-family: "Roboto _GEO Mt";
   }
   
  
@@ -113,6 +114,8 @@
     font-size: 18px;
   }
   .about-us-container p {
+    
+font-family: "Roboto _Nusx";
     font-style: 16px;
     letter-spacing: 1.25px;
   }
@@ -138,6 +141,8 @@
   }
   .sidenav span {
     position: absolute;
+    
+font-family: "Roboto _GEO Mt";
     rotate: -90deg;
     width: 250px;
     margin-left: -70px;
@@ -199,6 +204,7 @@
     width: 100%;
   }
   .news-card-text {
+    font-family: "Roboto _Nusx";
     padding: 20px 15px;
     text-align: left;
   }
@@ -242,6 +248,8 @@
     cursor: pointer;
   }
   .contacts-wrapper{
+    font-family: "Roboto _GEO Mt";
+
       width: 100%;
       height:100vh ;
       display: flex;
