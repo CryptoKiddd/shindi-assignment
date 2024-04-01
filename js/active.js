@@ -6,23 +6,23 @@ const geo = document.getElementById('geo')
 const rus = document.getElementById('rus')
 const eng = document.getElementById('eng')
 
-if(windowPathname === "pages/about.html"){
+if(windowPathname === "/pages/about.html"){
     underline.style.width = '134px'
     underline.style.left = "100px"
 
 }
-if(windowPathname === "pages/news.html"){
+if(windowPathname.includes("/pages/news.html")){
     
     underline.style.left = "413px"
 
 }
-if(windowPathname === "pages/contacts.html"){
+if(windowPathname.includes("/pages/contacts.html")){
     
     underline.style.left = "513px"
 
 
 }
-if(windowPathname === "pages/tourinvest.html"){
+if(windowPathname.includes("/pages/tourinvest.html")){
     underline.style.left = "234px"
     underline.style.width = '179px'
 
