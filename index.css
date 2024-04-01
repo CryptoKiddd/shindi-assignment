@@ -1,16 +1,16 @@
 
 @font-face {
   font-family: "Roboto _Nusx";
-  src: url('/fonts/Roboto\ _Nusx.ttf');
+  src: url('fonts/Roboto\ _Nusx.ttf');
   src: 
-       url('/fonts/Roboto\ _Nusx.ttf') format('truetype');
+       url('fonts/Roboto\ _Nusx.ttf') format('truetype');
 }
 
 @font-face {
   font-family: "Roboto _GEO Mt";
-  src: url('/fonts/Roboto_Geo_Arm_Mt_0.ttf');
+  src: url('fonts/Roboto_Geo_Arm_Mt_0.ttf');
   src: 
-       url('/fonts/Roboto_Geo_Arm_Mt_0.ttf') format('truetype');
+       url('fonts/Roboto_Geo_Arm_Mt_0.ttf') format('truetype');
 }
 * {
   box-sizing: border-box;
