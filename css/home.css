@@ -7,6 +7,15 @@
 
   /* margin-top: 170px; */
 }
+.main-page-logo{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: grid;place-items: center;
+  z-index: 99;
+}
 .hero-image img{
   /* margin-top: 160px; */
   width: 100%;
