@@ -68,3 +68,17 @@ form button{
    height: 100% ;
    z-index: 101;
 }
+@media (width < 798px){
+    .contacts-container{
+      margin-top: -98vh;
+    }
+  
+  }
+@media (width < 798px){
+    .contacts-container{
+      margin-top: -98vh;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  
+  }

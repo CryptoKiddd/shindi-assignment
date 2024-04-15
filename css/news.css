@@ -10,7 +10,7 @@
   
     flex-wrap: wrap;
     margin: auto;
-    margin-top: -50px;
+    margin-top: -150px;
     
   }
   img{
@@ -24,7 +24,7 @@
     align-items: center;
     /* margin-left: px; */
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.05);
-    z-index: 1001;
+    z-index: 11;
 
     transition: 550ms ease;
   }
@@ -79,3 +79,10 @@
   .news-card:hover .news-card-text {
     opacity: 1;
   }
+
+@media (width < 798px){
+  .news-container{
+    margin-top: -98vh;
+  }
+
+}

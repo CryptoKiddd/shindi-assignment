@@ -20,58 +20,9 @@ function initMap() {
 window.initMap = initMap;
 
 
-///projects animation
-
-// let options = {
-//   root:document.body,
-//   rootMargin: "0px",
-//   threshold: 1.0,
-  
-// }
-
-// const animateWhenVisible =(entries,observer)=>{
-//   entries.forEach((entry)=>{
-//     console.log(entry)
-    
-//   })
-
-// }
 
 
-const projects = document.querySelectorAll('.project')
 
-
-const projContainer = document.getElementById('projects')
-
-const options = {
-  root:null,
-  threshold:0,
-  rootMargin:" 0px 0px 120% 0px"
- 
-
-}
-const observer = new IntersectionObserver(function(entries,observer){
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      projects.forEach((project,idx)=>{
-       
-        project.style.transform="translateY(0)"
-     })
-     return
-    }
-    projects.forEach((project,idx)=>{
-      project.style.transform="translateY(100%)"
-      if(idx% 2 === 0){
-        project.style.transform="translateY(-100%)"
-      }
-     
-   })
-   
-  })
-  
-},options)
-
-observer.observe(projContainer)
 
 
 const activeIndicator = document.querySelector('.nav-underline')
@@ -94,4 +45,29 @@ links.forEach(link=>{
 
 
 
+const slider = document.querySelector('.slider');
 
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+document.addEventListener('click',activate,false);
+
+
+const menuBtn = document.querySelector(".menu-button")
+const navigation = document.querySelector(".nav-container")
+const menuline1=document.querySelector(".menu-line1")
+const menuline2=document.querySelector(".menu-line2")
+const menuline3=document.querySelector(".menu-line3")
+
+menuBtn.addEventListener("click",()=>{
+  navigation.classList.toggle('toggle-menu');
+  menuBtn.classList.toggle('toggle-menubtn')
+  
+  menuline1.classList.toggle('rotate-menuline1')
+  menuline2.classList.toggle('rotate-menuline2')
+  menuline3.classList.toggle('rotate-menuline3')
+})

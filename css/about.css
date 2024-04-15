@@ -1,5 +1,5 @@
 .slider{
-  height: calc(100vh - 360px );
+  height: calc(100vh - 470px );
    position: relative;
  
    overflow: hidden;
@@ -13,10 +13,10 @@ font-family: "Roboto _Nusx";
     height: 100%;
     text-align: justify;
 background: white;
-    padding: 150px 250px;
+    padding: 160px 250px;
     transition: 0.5s ease;
-    display: flex;justify-content: center;
-    align-items: center;
+    /* display: flex;justify-content: center;
+    align-items: center; */
     flex-direction: column;
     top: 0;
     left: 0;
@@ -67,7 +67,7 @@ color: #7a7a7a;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    margin-top: -25px;
+    margin-top: -185px;
 }
 .slider-actions button{
     background: white;
@@ -78,4 +78,53 @@ color: #7a7a7a;
     z-index: 1000;
     color: #224862;
     cursor: pointer;
+}
+@media (width < 798px){
+    .slider-container{
+        margin-top: -100vh;
+     min-height: 300px;
+        
+    }
+    .slide{
+        padding: 50px 10px;
+        vertical-align: bottom;
+        margin-top: 160px;
+        min-height: 200px;
+        height: 100%;
+        background-color: white;
+    }
+    .slider-actions{
+        position: absolute;
+        bottom:0 ;
+        /* background-color: red; */
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        gap: 0;
+    }
+    .slider-actions > button{
+      flex: 1;
+      height: 100%;
+      border-radius: 0;
+      border: none;
+      width: 100%;
+      transition: 350ms;
+     display: block;
+      
+    }
+    .slider-actions > button:hover{
+     background-color: #224862;
+     color: white;
+     
+      
+    }
+    .slider-actions > button:nth-child(2){
+    border-inline: 1px solid  #224862;;
+      
+    }
+    #next, #prev{
+        display: none;
+     
+    }
+
 }

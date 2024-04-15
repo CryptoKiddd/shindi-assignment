@@ -11,7 +11,7 @@
 .tourinvest-proj-wrapper .proj{
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 30px;
     max-height: 500px;
     height: 100%;
 }
@@ -56,19 +56,87 @@ color: #7a7a7a;
 
 @media only screen and (max-width: 1600px) {
     .tourinvest-proj-wrapper{
-        padding-inline: 150px;
+        padding-inline: 120px;
 
     }
+    .proj-left{
+        padding: 10px;
+    }
+    
     }
 @media only screen and (max-width: 1371px) {
     .tourinvest-proj-wrapper{
-        padding-inline: 100px;
+        padding-inline: 40px;
 
     }
+   
     }
-@media only screen and (max-width: 1071px) {
+@media only screen and (max-width: 1171px) {
     .tourinvest-proj-wrapper{
         padding-inline:50px;
 
     }
+    .proj{
+        justify-content: center;
+        gap: 20px;
+    }
+   
+    }
+    @media (width < 998px) {
+     .proj-left{
+        flex: 5;
+        font-size: 14px;
+     }
+     .proj-left p{
+     
+        font-size: 12px;
+     }
+     .proj-right{
+        flex: 3;
+     }
+
+    }
+    @media (width < 798px) {
+        .tourinvest-proj-wrapper{
+            margin-top: -100vh;
+        }
+        .proj-left p{
+     
+            font-size: 10px;
+         }
+
+    }
+    @media (width < 661px) {
+        .tourinvest-proj-wrapper{
+            margin-top: -100vh;
+            padding: 0;
+            gap: 0;
+        }
+        .proj{
+            flex-direction: column;
+            color: white;
+           
+        }
+        .proj-right{
+            display: none;
+        }
+        .proj-left{
+            flex: 1;
+            color: white;
+            padding: 10px;
+        }
+        .proj p {
+            color: white;
+        }
+        .tourinvest-proj-wrapper .proj:nth-child(even){
+            flex-direction: column;
+            background-image: url('../images/boulevard-main.png');
+          
+        }
+        .tourinvest-proj-wrapper .proj:nth-child(odd){
+            flex-direction: column;
+            background-image: url('../images/hilton.jpeg');
+          
+        }
+
     }
