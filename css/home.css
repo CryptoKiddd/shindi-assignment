@@ -543,6 +543,9 @@ font-family: "Roboto _GEO Mt";
   .about-us-container h4{
     font-size: 16px;
   }
+  .news-card-text{
+    padding: 10px;
+  }
       
   .news-container{
     flex-wrap: nowrap;
